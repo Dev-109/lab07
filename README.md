@@ -9,7 +9,7 @@ The previous lab had you develop a model which uses SQLite, such that it was kep
 You are required to create a Firestore Database called `grades`. Add some data to it (try and put at least 10 documents to it). Each document should have `sid` as `string` and a `grade` as `string`. Below is the screenshot of sample database created in Firestore:
 <br />
 <br />
-![the grade form page](images/database_screenshot.png)
+![the grade form page](https://github.com/csci-4100u/lab07/blob/cbb05f7abae5fa9122c62094da6647dda5ab9526/images/database_screenshot.PNG)
 
 ### Changes to the User Interface
 While it is normally desirable to make minimal changes to the user interface, in this case we need to since we want to support live updates when data is modified in our cloud store.  We'll accomplish this task by using a `StreamBuilder`.  `StreamBuilder` is a class which expects a stream of data, and re-builds the UI when the data has changed.  We've used this class in the in-class demo.  This `StreamBuilder` will now be used to build the `ListView` created in the previous lab.  Try and remove `setState()` method as deemed necessary to avoid unncessary updating of the UI as `StreamBuilder` will do that for us.
